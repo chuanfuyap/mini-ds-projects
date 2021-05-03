@@ -1,0 +1,59 @@
+digraph {
+	subgraph cluster4 {
+		"µ0" [label="µ0
+~
+Exponential"]
+		"µ2" [label="µ2
+~
+Exponential"]
+		"µ1" [label="µ1
+~
+Exponential"]
+		label=4 labeljust=r labelloc=b style=rounded
+	}
+	subgraph cluster10 {
+		packed_L2 [label="packed_L2
+~
+_LKJCholeskyCov"]
+		packed_L1 [label="packed_L1
+~
+_LKJCholeskyCov"]
+		packed_L0 [label="packed_L0
+~
+_LKJCholeskyCov"]
+		label=10 labeljust=r labelloc=b style=rounded
+	}
+	subgraph "cluster4 x 4" {
+		cov2 [label="cov2
+~
+Deterministic" shape=box]
+		cov0 [label="cov0
+~
+Deterministic" shape=box]
+		cov1 [label="cov1
+~
+Deterministic" shape=box]
+		label="4 x 4" labeljust=r labelloc=b style=rounded
+	}
+	subgraph "cluster40 x 4" {
+		mvgauss0 [label="mvgauss0
+~
+MvNormal" style=filled]
+		mvgauss1 [label="mvgauss1
+~
+MvNormal" style=filled]
+		mvgauss2 [label="mvgauss2
+~
+MvNormal" style=filled]
+		label="40 x 4" labeljust=r labelloc=b style=rounded
+	}
+	packed_L0 -> cov0
+	"µ0" -> mvgauss0
+	packed_L0 -> mvgauss0
+	packed_L2 -> cov2
+	packed_L2 -> mvgauss2
+	"µ2" -> mvgauss2
+	packed_L1 -> cov1
+	packed_L1 -> mvgauss1
+	"µ1" -> mvgauss1
+}
