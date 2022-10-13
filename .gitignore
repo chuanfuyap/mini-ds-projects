@@ -1,3 +1,6 @@
 ./linear-regression/lm-info.pptx
-.ipynb_checkpoints
+./linear-regression/~$lm-info.pptx
+./linear-regression/ipynb_checkpoints
 .DS_Store
+./bayes-clf/ipynb_checkpoints
+.ipynb_checkpoints
