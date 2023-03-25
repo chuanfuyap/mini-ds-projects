@@ -6,4 +6,4 @@
 .DS_Store
 ./bayes-clf/ipynb_checkpoints
 .ipynb_checkpoints
-./multimorbidity/data/phe_multimorbidity_2011_england.csv
+/multimorbidity/data/phe_multimorbidity_2011_england.csv
