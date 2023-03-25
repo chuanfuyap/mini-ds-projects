@@ -1,9 +1,9 @@
-./linear-regression/lm-info.pptx
-./linear-regression/~$lm-info.pptx
-./linear-regression/ipynb_checkpoints
-./linear-regression/data/.DS_Store
-./linear-regression/.DS_Store
+/linear-regression/lm-info.pptx
+/linear-regression/~$lm-info.pptx
+/linear-regression/ipynb_checkpoints
+/linear-regression/data/.DS_Store
+/linear-regression/.DS_Store
 .DS_Store
-./bayes-clf/ipynb_checkpoints
+/bayes-clf/ipynb_checkpoints
 .ipynb_checkpoints
 /multimorbidity/data/phe_multimorbidity_2011_england.csv
